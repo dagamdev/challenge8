@@ -16,3 +16,8 @@ list.forEach((item)=> {
         item.classList.add("active")
     })
 })
+
+const nav = document.querySelector("nav")
+document.addEventListener("scroll", () => {
+    nav.classList.toggle("active", window.scrollY > 200)
+})

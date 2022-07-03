@@ -106,7 +106,6 @@ nav ul {
     margin-left: 5vw;
     margin-right: 5vw;
     padding: 4vh 4vh;
-    display: flex;
     justify-content: space-evenly;
 }
 
@@ -403,11 +402,15 @@ footer > a{
     }
     
     nav {
-        /* position: fixed; */
+        position: fixed;
         padding: 2vw;
         height: 12vh;
         justify-content: space-between;
-        /* background-color: rgba(255, 255, 255, 0.5); */
+        transition: background-color 0.8s;
+    }
+
+    nav.active{
+        background-color: rgba(158, 153, 153, 0.336);
     }
     
     #menu{
